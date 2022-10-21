@@ -1,27 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Lab 2</title>   
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <body>
+        <div id="slider">
 
-<body>
-    <div id="slider">
-        <div class="slides">
-        	<img src="http://picsum.photos/seed/picsum/600/400" alt="">
-        	<img src="http://picsum.photos/seed/picsum/600/400" alt="">
-        	<img src="http://picsum.photos/seed/picsum/600/400" alt="">
-        	<img src="http://picsum.photos/seed/picsum/600/400" alt="">
-        	<img src="http://picsum.photos/seed/picsum/600/400" alt="">
-        	<img src="http://picsum.photos/seed/picsum/600/400" alt="">
+            <div class="slides fade">
+                <img src="./Zdjęcia/1.JPG" alt="Photo1">
+            </div>
+
+            <div class="slides fade">
+                <img src="./Zdjęcia/2.JPG" alt="Photo2">
+            </div>
+
+            <div class="slides fade">
+                <img src="./Zdjęcia/3.JPG" alt="Photo3">
+            </div>
+
+            <div class="slides fade">
+                <img src="./Zdjęcia/4.JPG" alt="Photo4">
+            </div>
+
+            <div class="slides fade">
+                <img src="./Zdjęcia/5.JPG" alt="Photo5">
+            </div>
+
+            <div id="first">
+                <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+            </div>
+
+            <div id="second">
+                <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
         </div>
-    </div>
-    <main>
-    </main>
-    <script src="main.js"></script>
-</body>
 
+        <div style="text-align:center">
+            <span class="dot active" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+
+        <main>
+        </main>
+
+        <script src="main.js"></script>
+    </body>
 </html>
