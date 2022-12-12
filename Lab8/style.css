@@ -1,0 +1,20 @@
+body{
+    background-color: #f0fffc;
+}
+
+.bar{
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.input_data{
+    margin-right: 30px;
+}
+
+.canvas{
+    margin: 10px;
+    border: solid;
+    
+}
